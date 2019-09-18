@@ -41,7 +41,7 @@ class Login extends Component {
   }
 }
 
-loginStyles = StyleSheet.create({
+const loginStyles = StyleSheet.create({
   bottomMargin: {
     marginBottom: '8%'
   },

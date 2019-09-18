@@ -27,7 +27,7 @@ class Button extends Component {
   }
 }
 
-buttonStyles = StyleSheet.create({
+const buttonStyles = StyleSheet.create({
   button: {
     backgroundColor: "#e35f38",
     padding: 15,

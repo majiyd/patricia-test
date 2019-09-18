@@ -14,7 +14,7 @@ class HeaderText extends Component {
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   parent: {
     marginVertical: 5,
   },

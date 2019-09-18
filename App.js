@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { StatusBar, StyleSheet, Text, View } from 'react-native';
 import Login from './screens/Login'
 import CreateAccount from './screens/CreateAccount'
 import FoodItem from './screens/FoodItem'
@@ -8,6 +8,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar barStyle="light-content"/>
         {/* <Login /> */}
         {/* <CreateAccount /> */}
         <FoodItem />
