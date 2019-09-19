@@ -4,6 +4,7 @@ import Login from './screens/Login'
 import CreateAccount from './screens/CreateAccount'
 import FoodItem from './screens/FoodItem'
 import Orders from './screens/Orders'
+import Home from './screens/Home'
 
 export default class App extends Component {
   render() {
@@ -13,7 +14,8 @@ export default class App extends Component {
         {/* <Login /> */}
         {/* <CreateAccount /> */}
         {/* <FoodItem /> */}
-        <Orders />
+        {/* <Orders /> */}
+        <Home />
       </View>
     );
   }
