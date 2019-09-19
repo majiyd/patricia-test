@@ -4,17 +4,19 @@ import {
   View,
   Image,
   TextInput,
-  StyleSheet
+  StyleSheet,
+  ScrollView
 } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 import HeaderText from '../../components/HeaderText'
+import Meal from '../../components/Meal'
 
 class Home extends Component {
   render() { 
     return ( 
-      <View>
+      <ScrollView contentContainerStyle={{flex: 1}}>
         <View style={[homeStyles.flex, homeStyles.justifyEnd]}>
-          <Ionicons name="md-cart" size={32} color="black" />
+          <Ionicons name="md-cart" size={20} color="black" />
         </View>
         <View style={homeStyles.bottomMargin}>
           <HeaderText>Hello John</HeaderText>
@@ -38,7 +40,15 @@ class Home extends Component {
         {/*search ends  */}
         {/* meals start */}
         <View>
-
+          <Meal 
+            name={"Cheese Burger"}
+            description={"Beef Veggie & chilli"}
+            image={"../../../assets/cheese-burger.jpg"}
+          />
+          <Meal 
+            name={"Jollof Rice"}
+            description={"Grilled Chicken, Veggies & Sauce"}
+          />
         </View>
         {/* meals end */}
         {/* recomendation starts */}
@@ -68,7 +78,7 @@ class Home extends Component {
           </View>
         </View>
         {/* recomendation ends */}
-      </View>
+      </ScrollView>
     );
   }
 }
@@ -102,13 +112,14 @@ const homeStyles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     padding: '3%',
-    marginVertical: '7%',
+    marginVertical: '3%',
+    marginBottom: '5%',
     borderRadius: 10,
   },
   input: {
     display: 'flex',
     flex: 1,
-    marginLeft: '3%',
+    marginLeft: '4%',
     
   }
   
