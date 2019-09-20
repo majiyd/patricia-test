@@ -97,7 +97,14 @@ const foodItemStyles =StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 15,
     borderRadius: 10,
-    boxShadow: "0px 4px 37px 16px rgba(0,0,0,0.15)"
+    // boxShadow: "0px 4px 37px 16px rgba(0,0,0,0.15)"
+    shadowColor: "#333",
+    shadowOffset: {
+      width: 0,
+      height:3
+    },
+    shadowOpacity: 0.2,
+    shadowRadius: 27
   }
 })
 

@@ -9,7 +9,7 @@ import HeaderText from '../../components/HeaderText'
 import FormInput from '../../components/FormInput'
 import Button from '../../components/Button'
 
-class Login extends Component {
+class CreateAccount extends Component {
   render() { 
     return ( 
       <KeyboardAvoidingView 
@@ -66,4 +66,4 @@ const loginStyles = StyleSheet.create({
   }
 
 })
-export default Login;
+export default CreateAccount;

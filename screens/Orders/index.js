@@ -22,7 +22,7 @@ class Orders extends Component {
             <View >
               <Image 
                 style={orderStyles.image}
-                source={require('../../assets/burger.jpg')}
+                source={require('../../assets/jollof-rice.jpg')}
               />
             </View>
             <View style={orderStyles.info}>
@@ -34,7 +34,7 @@ class Orders extends Component {
             <View 
               style={{justifyContent: 'center'}} 
             >
-              <View style={{backgroundColor: 'pink', padding: 5, paddingHorizontal: 10, borderRadius: '50%'}}>
+              <View style={{backgroundColor: 'pink', padding: 5, paddingHorizontal: 10, marginLeft: 5, borderRadius: 16}}>
                 <Ionicons name="md-trash" size={20} color="black" />
               </View>
               
@@ -56,7 +56,7 @@ class Orders extends Component {
             <View 
               style={{justifyContent: 'center'}} 
             >
-              <View style={{backgroundColor: 'pink', padding: 5, paddingHorizontal: 10, borderRadius: '50%'}}>
+              <View style={{backgroundColor: 'pink', padding: 5, paddingHorizontal: 10, marginLeft: 5, borderRadius: 16}}>
                 <Ionicons name="md-trash" size={20} color="black" />
               </View>
               
@@ -66,7 +66,7 @@ class Orders extends Component {
             <View >
               <Image 
                 style={orderStyles.image}
-                source={require('../../assets/burger.jpg')}
+                source={require('../../assets/cheese-burger.jpg')}
               />
             </View>
             <View style={orderStyles.info}>
@@ -78,7 +78,7 @@ class Orders extends Component {
             <View 
               style={{justifyContent: 'center'}} 
             >
-              <View style={{backgroundColor: 'pink', padding: 5, paddingHorizontal: 10, borderRadius: '50%'}}>
+              <View style={{backgroundColor: 'pink', padding: 5, paddingHorizontal: 10, marginLeft: 5, borderRadius: 16}}>
                 <Ionicons name="md-trash" size={20} color="black" />
               </View>
               
@@ -88,7 +88,7 @@ class Orders extends Component {
             <View >
               <Image 
                 style={orderStyles.image}
-                source={require('../../assets/burger.jpg')}
+                source={require('../../assets/jollof-rice.jpg')}
               />
             </View>
             <View style={orderStyles.info}>
@@ -100,7 +100,7 @@ class Orders extends Component {
             <View 
               style={{justifyContent: 'center'}} 
             >
-              <View style={{backgroundColor: 'pink', padding: 5, paddingHorizontal: 10, borderRadius: '50%'}}>
+              <View style={{backgroundColor: 'pink', padding: 5, paddingHorizontal: 10, marginLeft: 5, borderRadius: 16}}>
                 <Ionicons name="md-trash" size={20} color="black" />
               </View>
               
@@ -122,7 +122,7 @@ class Orders extends Component {
 
 const orderStyles = StyleSheet.create({
   bottomMargin: {
-    marginBottom: '2%'
+    paddingVertical: '5%'
   },
   greyText: {
     color: "#999"
@@ -148,7 +148,9 @@ const orderStyles = StyleSheet.create({
   image: {
     width: 50,
     height: 50,
-    resizeMode: 'cover'
+    resizeMode: 'cover',
+    marginRight: 10,
+    borderRadius: 10
   },
   info: {
     flexGrow: 1, 

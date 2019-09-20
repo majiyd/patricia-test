@@ -43,7 +43,10 @@ const mealStyles = StyleSheet.create({
     marginBottom: 15,
     borderRadius: 10,
     marginTop: 5,
-    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19)"
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2
   },
   name: {
     fontWeight: 'bold',

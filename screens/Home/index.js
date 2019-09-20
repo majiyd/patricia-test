@@ -5,7 +5,8 @@ import {
   Image,
   TextInput,
   StyleSheet,
-  ScrollView
+  ScrollView,
+  SafeAreaView
 } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
 import HeaderText from '../../components/HeaderText'
@@ -14,7 +15,9 @@ import Meal from '../../components/Meal'
 class Home extends Component {
   render() { 
     return ( 
-      <ScrollView contentContainerStyle={{flex: 1}}>
+      
+      <SafeAreaView style={{flex: 1}}>
+      <ScrollView >
         <View style={[homeStyles.flex, homeStyles.justifyEnd]}>
           <Ionicons name="md-cart" size={20} color="black" />
         </View>
@@ -32,7 +35,7 @@ class Home extends Component {
               style={{flex: 1, fontSize: 16}}
               autoCorrect={false}
               placeholder={"search for meals, dishes"}
-              placeholderTextColor="#888"
+              placeholderTextColor="black"
               underlineColorAndroid="transparent"
             />
           </View>
@@ -78,7 +81,7 @@ class Home extends Component {
           </View>
         </View>
         {/* recomendation ends */}
-      </ScrollView>
+      </ScrollView></SafeAreaView>
     );
   }
 }

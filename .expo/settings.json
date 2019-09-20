@@ -1,8 +1,8 @@
 {
-  "urlRandomness": "s6-zce",
-  "hostType": "lan",
+  "hostType": "tunnel",
   "lanType": "ip",
   "dev": true,
   "minify": false,
+  "urlRandomness": "np-67s",
   "https": false
 }

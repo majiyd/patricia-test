@@ -31,12 +31,12 @@ const buttonStyles = StyleSheet.create({
   button: {
     backgroundColor: "#e35f38",
     padding: 15,
-    borderRadius: 10,
-    textTransform: "uppercase"
+    borderRadius: 10,   
   },
   buttonText:{
     color: "white",
-    textAlign: "center"
+    textAlign: "center",
+    textTransform: "uppercase"
 
   },
 

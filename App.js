@@ -1,24 +1,19 @@
-import React, { Component } from 'react';
-import { StatusBar, StyleSheet, Text, View } from 'react-native';
-import Login from './screens/Login'
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import CreateAccount from './screens/CreateAccount'
-import FoodItem from './screens/FoodItem'
-import Orders from './screens/Orders'
 import Home from './screens/Home'
+import Orders from './screens/Orders'
+import FoodItem from './screens/FoodItem'
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <StatusBar barStyle="light-content"/>
-        {/* <Login /> */}
-        {/* <CreateAccount /> */}
-        {/* <FoodItem /> */}
-        {/* <Orders /> */}
-        <Home />
-      </View>
-    );
-  }
+export default function App() {
+  return (
+    <View style={styles.container}>
+      {/* <CreateAccount />      */}
+      {/* <Home /> */}
+      {/* <Orders /> */}
+      <FoodItem />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
