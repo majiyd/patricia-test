@@ -43,7 +43,8 @@ class Login extends Component {
 
 const loginStyles = StyleSheet.create({
   bottomMargin: {
-    marginBottom: '8%'
+    marginBottom: '8%',
+    paddingTop: 50
   },
   greyText: {
     color: "#999"

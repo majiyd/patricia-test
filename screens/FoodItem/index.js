@@ -28,7 +28,7 @@ class FoodItem extends Component {
           </View>
           <View style={foodItemStyles.image}>
           <Image
-            style={{height: 250, resizeMode: 'contain'}}
+            style={{height: 100, resizeMode: 'contain'}}
             source={require('../../assets/burger.jpg')}
           />
           </View>

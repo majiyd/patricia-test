@@ -4,6 +4,7 @@ import CreateAccount from './screens/CreateAccount'
 import Home from './screens/Home'
 import Orders from './screens/Orders'
 import FoodItem from './screens/FoodItem'
+import AppNavigator from './AppNavigator'
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
       {/* <CreateAccount />      */}
       {/* <Home /> */}
       {/* <Orders /> */}
-      <FoodItem />
+      {/* <FoodItem /> */}
+      <AppNavigator />
     </View>
   );
 }
@@ -21,7 +23,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     backgroundColor: '#FFF',
-    paddingTop: 0,
-    padding: "7%",
+    paddingHorizontal: "7%",
   },
 });

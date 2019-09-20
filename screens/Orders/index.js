@@ -3,6 +3,7 @@ import {
   Text,
   View,
   Image,
+  ScrollView,
   StyleSheet
 } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
@@ -12,7 +13,10 @@ import Button from '../../components/Button'
 class Orders extends Component {
   render() { 
     return ( 
-      <View>
+      <ScrollView contentContainerStyle={{
+        flexGrow: 1,
+        justifyContent: 'space-around',
+      }}>
         <View style={orderStyles.bottomMargin}>
           <HeaderText>My Orders</HeaderText>
           <Text style={orderStyles.greyText}>Welcome to your cart, preview items below</Text>
@@ -115,7 +119,7 @@ class Orders extends Component {
         <View>
           <Button>Checkout</Button>         
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }
